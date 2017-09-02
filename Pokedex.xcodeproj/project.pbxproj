@@ -15,6 +15,14 @@
 		DA2087FF1F572D9400BA3331 /* PokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2087FE1F572D9400BA3331 /* PokedexTests.swift */; };
 		DA20880A1F572D9400BA3331 /* PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2088091F572D9400BA3331 /* PokedexUITests.swift */; };
 		DA2088181F572F6D00BA3331 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = DA2088171F572F6D00BA3331 /* pokemon.csv */; };
+		DA20881D1F57306B00BA3331 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20881C1F57306B00BA3331 /* Pokemon.swift */; };
+		DA2088201F58317200BA3331 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20881F1F58317200BA3331 /* PokeCell.swift */; };
+		DA2088221F5836BE00BA3331 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2088211F5836BE00BA3331 /* csv.swift */; };
+		DA2088251F583AB000BA3331 /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2088231F583AB000BA3331 /* Pokemon Hollow.ttf */; };
+		DA2088261F583AB000BA3331 /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2088241F583AB000BA3331 /* Pokemon Solid.ttf */; };
+		DA20882C1F583DAD00BA3331 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA20882B1F583DAD00BA3331 /* music.mp3 */; };
+		DA20882E1F58511600BA3331 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20882D1F58511600BA3331 /* PokemonDetailViewController.swift */; };
+		DA2088301F5AC74800BA3331 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20882F1F5AC74700BA3331 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		DA2088091F572D9400BA3331 /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
 		DA20880B1F572D9400BA3331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA2088171F572F6D00BA3331 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		DA20881C1F57306B00BA3331 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		DA20881F1F58317200BA3331 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		DA2088211F5836BE00BA3331 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		DA2088231F583AB000BA3331 /* Pokemon Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Hollow.ttf"; sourceTree = "<group>"; };
+		DA2088241F583AB000BA3331 /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
+		DA20882B1F583DAD00BA3331 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		DA20882D1F58511600BA3331 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
+		DA20882F1F5AC74700BA3331 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +115,14 @@
 		DA2087E81F572D9400BA3331 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				DA20882A1F583B2900BA3331 /* Util */,
+				DA2088281F583AFA00BA3331 /* Controller */,
+				DA2088271F583ACB00BA3331 /* Resources */,
+				DA20881E1F58314D00BA3331 /* View */,
+				DA2088191F57304700BA3331 /* Model */,
 				DA2087E91F572D9400BA3331 /* AppDelegate.swift */,
-				DA2087EB1F572D9400BA3331 /* ViewController.swift */,
 				DA2087ED1F572D9400BA3331 /* Main.storyboard */,
 				DA2087F01F572D9400BA3331 /* Assets.xcassets */,
-				DA2088171F572F6D00BA3331 /* pokemon.csv */,
 				DA2087F21F572D9400BA3331 /* LaunchScreen.storyboard */,
 				DA2087F51F572D9400BA3331 /* Info.plist */,
 			);
@@ -126,6 +145,51 @@
 				DA20880B1F572D9400BA3331 /* Info.plist */,
 			);
 			path = PokedexUITests;
+			sourceTree = "<group>";
+		};
+		DA2088191F57304700BA3331 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA20881C1F57306B00BA3331 /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DA20881E1F58314D00BA3331 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA20881F1F58317200BA3331 /* PokeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DA2088271F583ACB00BA3331 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA20882B1F583DAD00BA3331 /* music.mp3 */,
+				DA2088241F583AB000BA3331 /* Pokemon Solid.ttf */,
+				DA2088171F572F6D00BA3331 /* pokemon.csv */,
+				DA2088231F583AB000BA3331 /* Pokemon Hollow.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DA2088281F583AFA00BA3331 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA2087EB1F572D9400BA3331 /* ViewController.swift */,
+				DA20882D1F58511600BA3331 /* PokemonDetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DA20882A1F583B2900BA3331 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DA2088211F5836BE00BA3331 /* csv.swift */,
+				DA20882F1F5AC74700BA3331 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,15 +260,18 @@
 				TargetAttributes = {
 					DA2087E51F572D9400BA3331 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					DA2087F91F572D9400BA3331 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DA2087E51F572D9400BA3331;
 					};
 					DA2088041F572D9400BA3331 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DA2087E51F572D9400BA3331;
 					};
@@ -237,7 +304,10 @@
 			files = (
 				DA2087F41F572D9400BA3331 /* LaunchScreen.storyboard in Resources */,
 				DA2087F11F572D9400BA3331 /* Assets.xcassets in Resources */,
+				DA2088251F583AB000BA3331 /* Pokemon Hollow.ttf in Resources */,
+				DA2088261F583AB000BA3331 /* Pokemon Solid.ttf in Resources */,
 				DA2088181F572F6D00BA3331 /* pokemon.csv in Resources */,
+				DA20882C1F583DAD00BA3331 /* music.mp3 in Resources */,
 				DA2087EF1F572D9400BA3331 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +335,11 @@
 			files = (
 				DA2087EC1F572D9400BA3331 /* ViewController.swift in Sources */,
 				DA2087EA1F572D9400BA3331 /* AppDelegate.swift in Sources */,
+				DA2088201F58317200BA3331 /* PokeCell.swift in Sources */,
+				DA20881D1F57306B00BA3331 /* Pokemon.swift in Sources */,
+				DA2088301F5AC74800BA3331 /* Constants.swift in Sources */,
+				DA2088221F5836BE00BA3331 /* csv.swift in Sources */,
+				DA20882E1F58511600BA3331 /* PokemonDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +493,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RavivBenami.Pokedex;
@@ -430,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_ACTIVITY_MODE = "";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RavivBenami.Pokedex;
